@@ -66,7 +66,6 @@ class Image extends \yii\db\ActiveRecord
         $sub = $this->getSubDur();
 
         $origin = $this->getPathToOrigin();
-
         $filePath = $base.'/'.
             $sub.'/'.$this->urlAlias.$urlSize.'.'.pathinfo($origin, PATHINFO_EXTENSION);;
         if(!file_exists($filePath)){
